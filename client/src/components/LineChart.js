@@ -14,12 +14,20 @@ export default function LineChart() {
 
         setOptionsCategories(Object.keys(res.data.data['Time Series (5min)']));
         var obj1 = Object.values(res.data.data['Time Series (5min)']);
-
+        var createobj = [];
+        for (let key in obj1) {
+            var val = obj1[key];
+            // setSeriesData(...seriesData, Object.values(val)[0]);
+            console.log(Object.values(val)[0]);
+            createobj.push(Object.values(val)[0]);
+        }
+        setSeriesData(createobj);
+        // console.log(createobj);
     }, []);
 
     const series = [{
-        name: "Desktops",
-        data: [10, 41, 35, 51, 49, 62, 69, 91, 148]
+        name: "1. open",
+        data: seriesData
     }];
 
     const options = {
