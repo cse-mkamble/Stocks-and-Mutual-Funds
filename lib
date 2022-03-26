@@ -1,0 +1,22 @@
+
+# ===================[ For Client ]===================
+npm install express --save
+npm install cors --save
+
+npm install --save-dev nodemon
+npm install concurrently --save
+
+
+# ===================[ For Client ]===================
+npm install --save react react-dom react-scripts
+npm install --save react-router-dom@5.2.0
+# npm install --save redux react-redux redux-thunk redux-devtools-extension
+
+# Install MUI, the world's most popular React UI framework.
+npm install @mui/material @emotion/react @emotion/styled
+npm install @mui/material @mui/styled-engine-sc styled-components
+npm install @mui/icons-material
+
+npm install --save @material-ui/core
+
+npm install --save axios
